@@ -24,37 +24,7 @@ The project utilizes the following hardware components:
 * **Green LED:** Visual feedback for correct actions/success.
 * **Red LED:** Visual feedback for incorrect actions/errors.
 * **Buzzer:** Audible feedback and music playback.
-* **Resistors (220 Ohm):** For current limiting with LEDs.
-
-### Pin Connections Summary
-
-| Component       | Function      | Arduino Mega Pin(s)                                   | Notes                                       |
-| :-------------- | :------------ | :---------------------------------------------------- | :------------------------------------------ |
-| **LCD (16x2)** | RS            | Digital Pin 12                                        |                                             |
-|                 | Enable        | Digital Pin 11                                        |                                             |
-|                 | D4            | Digital Pin 5                                         |                                             |
-|                 | D5            | Digital Pin 4                                         |                                             |
-|                 | D6            | Digital Pin 3                                         |                                             |
-|                 | D7            | Digital Pin 2                                         |                                             |
-|                 | VSS           | GND                                                   |                                             |
-|                 | VDD           | +5V                                                   |                                             |
-|                 | V0            | Potentiometer (for contrast)                          |                                             |
-|                 | Backlight +   | +5V (with resistor if needed)                         |                                             |
-|                 | Backlight -   | GND                                                   |                                             |
-| **Keypad (4x4)**| Rows          | Analog Pins A0, A1, A2, A3                            |                                             |
-|                 | Columns       | Analog Pins A4, A5, Digital Pins 2, 3                 |                                             |
-| **RTC DS1307** | SDA           | Digital Pin 20 (SDA)                                  | I2C Communication                           |
-|                 | SCL           | Digital Pin 21 (SCL)                                  | I2C Communication                           |
-|                 | VCC           | +5V                                                   |                                             |
-|                 | GND           | GND                                                   |                                             |
-|                 | 3V Battery    | Battery Holder                                        | For time retention when power is off        |
-| **Green LED** | Anode         | Digital Pin 5 (through 220-ohm resistor)              | Visual feedback for correct actions         |
-|                 | Cathode       | GND                                                   |                                             |
-| **Red LED** | Anode         | Digital Pin 4 (through 220-ohm resistor)              | Visual feedback for incorrect actions       |
-|                 | Cathode       | GND                                                   |                                             |
-| **Buzzer** | Signal Pin    | Digital Pin 6                                         | Audible feedback and music playback         |
-|                 | Ground Pin    | GND                                                   |                                             |
-
+* **Resistors (220 Ohm):** For current limiting with LEDs.     
 
 ## 🚀 Software Setup
 
